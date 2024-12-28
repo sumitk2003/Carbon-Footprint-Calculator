@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		
+		<style>
+            
+      body {
+ 
+        background-image: url('file:///C:/Users/SUMIT%20KUMAR/Downloads/foot.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover; 
+       }
+      h1 {
+        color: rgb(0, 6, 6); 
+        font-size:50px
+      }
+      p {
+        font-size:30px;
+        color: black
+      }
+      h2 {
+        color:rgb(0, 6, 6);
+        font-size:40px
+      }
+      #demo {
+        font-family: 'Bitter';
+        color: #01070c;
+        text-align: center;
+        font-size: 30px;
+      } 
+      ul {
+        font-family: 'Bitter';
+        font-size: 25px;
+        color: #010408;
+      }
+      label {
+        font-family: 'Bitter';
+        color: black;
+        font-size: 20px;
+      }
+			h1 {
+				color: rgb(2, 52, 27);
+				font-family: 'Bitter';
+				font-size: 50px;
+			}
+			#intro {
+				font-family: 'Bitter';
+				color: #000204;
+				text-align: center;
+				font-size: 24px;
+			}
+			h2 {
+				color:rgb(2, 52, 27);
+				font-family: 'Bitter';
+				font-size: 40px
+			}
+			#carbon-footprint {
+				text-align: center;
+				color: #000803;
+				font-size: 25px;
+        font-family: 'bitter'
+			}
+			h3 {
+				color:rgb(2, 52, 27);
+				font-family: 'Bitter';
+				font-size: 38px;
+			}
+			"reduce" {
+				font-family: 'Bitter'
+			}
+			#end {
+				font-family: 'Bitter';
+				color: #010509;
+				text-align: center;
+				font-size: 28px;
+			}
+			#drive {
+				font-family: 'Bitter';
+				color: #000509;
+				text-align: center;
+				font-size: 20px;
+			}
+
+            button {
+            position: static;
+            background-color: #3db041;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+            
+            
+		</style>
+</head>
+
+<body>
+    
+	<h1>
+		<center><strong>Global Warming</strong></center></h1>
+
+<p id="intro">With all the talk about global warming in the news, this issue may seem like something too big to be tackled. However, every little action can make a difference to solve this problem. Read below to see how you can help!</p>
+
+<h2><center><strong></strong>Carbon Footprint Calculator</strong></center></h2>
+
+<p id="carbon-footprint">Your carbon footprint is the total amount of greenhouse gases that you generate by your actions. Answer the questions below to see your effect on this issue.</p>
+
+
+
+
+<label for="people">How many people do you live with?</label>
+<select id="people">
+    <option value="default" id="value">Choose your answer</option>
+    <option value="0">I live alone</option>
+    <option value="1">1 person</option>
+    <option value="2">2 people</option>
+    <option value="3">3 people</option>
+    <option value="4">4 people</option>
+    <option value="5">5 people</option>
+    <option value="6">more than 5 people</option>
+</select>
+<p> <hr> </p>
+<label for="home">Where do you live?</label>
+<select id="home">
+    <option value="default">Choose your answer</option>
+    <option value="large">In a large house</option>
+    <option value="medium">In a medium-sized house</option>
+    <option value="small">In a small house</option>
+    <option value="apartment">In an apartment</option>
+</select>
+<p> <hr> </p>
+<label for="meat">How often do you eat domestic meat?</label>
+<select id="meat">
+    <option value="default">Choose your answer</option>
+    <option value="daily">Daily</option>
+    <option value="few">A few times a week</option>
+    <option value="veggie">I am vegetarian</option>
+    <option value="vegan">I am vegan or only eat wild meat</option>
+</select>
+<p> <hr> </p>
+<label for="water">How often do you run your dishwasher and/or washing machine per week?</label>
+<select id="water">
+    <option value="default">Choose your answer</option>
+    <option value="most">more than 9 times</option>
+    <option value="more">4-9 times</option>
+    <option value="less">1-3 times</option>
+    <option value="none">I don't have a dishwasher and/or washing machine</option>
+</select>
+<p> <hr> </p>
+<label for="purchase">How many new pieces of furniture, electronics, or other household gadgets do you buy each year?</label>
+<select id="purchase">
+    <option value="default">Choose your answer</option>
+    <option value="most">more than 7</option>
+    <option value="more">5-7</option>
+    <option value="less">3-5</option>
+    <option value="least">less than 3</option>
+    <option value="none">almost nothing, or only second-hand items</option>
+</select>
+<p> <hr> </p>
+<label for="waste">How many trash cans do you fill each week?</label>
+<select id="waste">
+    <option value="default">Choose your answer</option>
+    <option value="most">4</option>
+    <option value="more">3</option>
+    <option value="less">2</option>
+    <option value="least">1</option>
+    <option value="none">half or less</option>
+</select>
+<p> <hr> </p>
+<label for="recycle">Do you recycle?</label>
+<select id="recycle">
+    <option value="default">Choose your answer</option>
+    <option value="yes">yes</option>
+    <option value="no">no</option>
+</select>
+<p> <hr> </p>
+<label for="car">How many miles do you travel per year in your personal vehicle?</label>
+<select id="car">
+    <option value="default">Choose your answer</option>
+    <option value="most">more than 15,000</option>
+    <option value="more">10,000 to 15,000</option>
+    <option value="less">1,000 to 10,000</option>
+    <option value="least">less than 1,000</option>
+    <option value="none">I don't have one</option>
+</select>
+<p> <hr> </p>
+<label for="public">How many miles do you travel per year in public transportation?</label>
+<select id="public">
+    <option value="default">Choose your answer</option>
+    <option value="most">more than 20,000</option>
+    <option value="more">15,000 to 20,000</option>
+    <option value="less">10,000 to 15,000</option>
+    <option value="least">1,000 to 10,000</option>
+    <option value="little">less than 1,000</option>
+    <option value="none">I don't use it</option>
+</select>
+<p> <hr> </p>
+
+<button type="button" onclick="calculateCarbon()">Calculate your carbon footprint!</button>
+
+<p id="demo" style = "font-family: "Bitter";"></p>
+
+<p style="size: 5cm;">Note.:- In 2023,The per capita CO2 Emission of India is 2.07 metric tons.  </p>
+
+<h3><center><strong>Reducing your Carbon Footprint</strong></center></h3>
+
+<p id="end">There are steps you can take to reduce your carbon footprint! Here are some ways you can do that.</p>
+
+<p id="plan" style = "font-family: "Bitter";"></p>
+
+
+<script>
+
+function calculateCarbon() {
+    var points = 0;
+    var plan = ["Live with more people", "Live in a smaller home", "Eat less meat", 
+    "Reduce water consumption", "Purchase less new electronics or but more secondhand ones", 
+    "Reduce your trash", "Recycle more", "Use your personal vehicle less","Use public transportation less"];
+    var you_plan = [];
+    var selectTag = document.getElementById('people');
+    var people = selectTag.options[selectTag.selectedIndex].value
+    if (people == "0") {
+        points += 14;
+        you_plan.push(plan[0]);
+    } else if (people == "1") {
+        points += 12;
+        you_plan.push(plan[0]);
+    } else if (people == "2") {
+        points += 10;
+    } else if (people == "3") {
+        points += 8;
+    } else if (people == "4") {
+        points += 6;
+    } else if (people == "5") {
+        points += 4;
+    } else if (people =="6") {
+        points += 2;
+    } else {
+        points -=300
+    }
+    var selectTag = document.getElementById('home');
+    var home = selectTag.options[selectTag.selectedIndex].value
+    if (home == "large") {
+        points += 10;
+        you_plan.push(plan[1]);
+    } else if (home == "medium") {
+        points += 7;
+        you_plan.push(plan[1]);
+    } else if (home == "small") {
+        points += 4;
+    } else if (home == "apartment") {
+        points += 2;
+    } else {
+        points -=300
+    }
+    var selectTag = document.getElementById('meat');
+    var meat = selectTag.options[selectTag.selectedIndex].value
+    if (meat == "daily") {
+        points += 16;
+        you_plan.push(plan[2]);
+    } else if (meat == "few") {
+        points += 14;
+        you_plan.push(plan[2]);
+    } else if (meat == "veggie") {
+        points += 10;
+    } else if (meat == "vegan") {
+        points += 10;
+    } else {
+        points -=300
+    }
+    var selectTag = document.getElementById('water');
+    var water = selectTag.options[selectTag.selectedIndex].value
+    if (water == "most") {
+        points += 6;
+        you_plan.push(plan[3]);
+    } else if (water == "more") {
+        points += 4;
+        you_plan.push(plan[3]);
+    } else if (water == "less") {
+        points += 2;
+    } else if (water == "none") {
+        points += 0;
+    } else {
+        points -=300
+    }
+    var selectTag = document.getElementById('purchase');
+    var purchase = selectTag.options[selectTag.selectedIndex].value
+    if (purchase == "most") {
+        points += 10;
+        you_plan.push(plan[4]);
+    } else if (purchase == "more") {
+        points += 8;
+        you_plan.push(plan[4]);
+    } else if (purchase == "less") {
+        points += 6;
+        you_plan.push(plan[4]);
+    } else if (purchase == "least") {
+        points += 4;
+    } else if (purchase == "none") {
+        points += 2;
+    } else {
+        points -=300
+    }
+    var selectTag = document.getElementById('waste');
+    var waste = selectTag.options[selectTag.selectedIndex].value
+    if (waste == "most") {
+        points += 50;
+        you_plan.push(plan[5]);
+    } else if (waste == "more") {
+        points += 40;
+        you_plan.push(plan[5]);
+    } else if (waste == "less") {
+        points += 30;
+        you_plan.push(plan[5]);
+    } else if (waste == "least") {
+        points += 20;
+    } else if (waste == "none") {
+        points += 5;
+    } else {
+        points -=300
+    }
+    var selectTag = document.getElementById('recycle');
+    var recycle = selectTag.options[selectTag.selectedIndex].value
+    if (recycle == "yes") {
+        points += 24;
+    } else if (recycle == "default") {
+        points -=300
+    } else {
+        you_plan.push(plan[6]);
+    }
+    var selectTag = document.getElementById('car');
+    var car = selectTag.options[selectTag.selectedIndex].value
+    if (car == "most") {
+        points += 12;
+        you_plan.push(plan[7]);
+    } else if (car == "more") {
+        points += 10;
+        you_plan.push(plan[7]);
+    } else if (car == "less") {
+        points += 6;
+    } else if (car == "least") {
+        points += 4;
+    } else if (car =="default") {
+        points -=300
+    }
+    var selectTag = document.getElementById('public');
+    var public = selectTag.options[selectTag.selectedIndex].value
+    if (public == "most") {
+        points += 12;
+        you_plan.push(plan[8]);
+    } else if (public == "more") {
+        points += 10;
+        you_plan.push(plan[8]);
+    } else if (public == "less") {
+        points += 6;
+        you_plan.push(plan[8]);
+    } else if (public == "least") {
+        points += 4;
+    } else if (public == "little") {
+        points += 2;
+    } else if (public == "default"){
+        points -=300
+    }
+    
+    if (points < 0) {
+        var cf = "Please choose all answers to calculate your carbon footprint"
+    } else if (points < 60) {
+        var cf = "Your carbon footprint is low, but you can always reduce it. Read the following for some ways to do this!" 
+         
+    } else if (points > 60) {
+        var cf = "Your carbon footprint is quite high. Read the following for some ways to reduce it!"
+          
+    } 
+    document.getElementById("demo").innerHTML = cf;
+
+    if (you_plan.length < 1) {
+        text = "<ul>";
+        plan.forEach(getPlan);
+        text += "</ul>";
+        document.getElementById("plan").innerHTML = text;
+        function getPlan(value) {
+            text += "<li>" + value + "</li>";
+        } 
+    } else {
+        text = "<ul>";
+        you_plan.forEach(getPlan);
+        text += "</ul>";
+        document.getElementById("plan").innerHTML = text;
+        function getPlan(value) {
+            text += "<li>" + value + "</li>"; 
+        }
+    }
+}
+
+</script>
+
+</body>
+</html>
